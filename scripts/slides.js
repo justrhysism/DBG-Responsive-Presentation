@@ -382,7 +382,6 @@ function setupFrames() {
 /* Slide Numbering */
 function numberSlides() {
 	for (var i = 0; i < slideEls.length; i++) {
-		console.log(i);
 		slideEls[i].setAttribute('data-slide-number', i);
 	}
 }
