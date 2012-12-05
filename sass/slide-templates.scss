@@ -1,0 +1,10 @@
+﻿.slides > article {
+	&.fill:not(.nobackground):not(.biglogo) {
+		// Browser Background
+		&.browser-background {
+			background: url(../images/browser-right-buttons.png) right top no-repeat,
+						url(../images/browser-address-bar.png) left top no-repeat,
+						#ffffff;
+		}
+	}
+}
