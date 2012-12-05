@@ -1,0 +1,4 @@
+
+[submodule "scripts/touch-punch"]
+	path = scripts/touch-punch
+	url = git://github.com/furf/jquery-ui-touch-punch.git
