@@ -79,6 +79,6 @@
 	// Block Icons
 	.icon-forward:before {
 		@include transform(rotate(180deg));
-		font-size: 500%;
+		font-size: 400%;
 	}
 }
