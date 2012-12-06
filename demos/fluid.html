@@ -1,36 +1,101 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-		
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono">
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/main.css">
-
-		<!--[if lt IE 9]>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|Droid+Sans+Mono">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
 		<![endif]-->
-	</head>
-	<body>
-		<!--[if lt IE 7]>
+</head>
+<body>
+	<!--[if lt IE 7]>
 			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
-
-		<header>
-			<h1>Fluid Width Demonstration</h1>
-		</header>
-		
-		<div class=""></div>
-
-		<div id="instructional-arrow">
-			Resize me! <span class="icon-right"></span>
+	<header class="row">
+		<h1>
+			Fluid Width Demonstration</h1>
+	</header>
+	<div class="row">
+		<div class="span12 pad">
+			<p>
+				Also take note of the grid layout. Grid layouts are important for maintaining consistency and
+				structure in a web design. They're not 100% <i>essential</i>, however they do make designs
+				look nicer, and are much easier to code.
+			</p>
 		</div>
-
-		<script src="js/main.js"></script>
-	</body>
+	</div>
+	<div class="row second-row">
+		<div class="span4 pad">
+			<p>
+				Boxes can easily be broken into sections, based on the grid. This grid is a 12-grid system.
+			</p>
+			<p>
+				This row is in thirds.
+			</p>
+		</div>
+		<div class="span4 pad">
+			<p>
+				However it's important to note, that if you want boxes to appear like this, with gaps 
+				between each item, the technology doesn't exist to make them all the same height.
+			</p>
+		</div>
+		<div class="span4 pad">
+			<p>
+				Whilst the CSS does exist, but is very poorly supported by browsers.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6 pad">
+			<p>
+				The spans don't all have to have the same width within a row. You can chop and change them around
+				as much as you like!
+			</p>
+		</div>
+		<div class="row">	
+			<div class="span3 pad box">
+				<p>
+					As long as it adds up to the columns you have.
+				</p>
+			</div>
+			<div class="span3">
+				<p>
+					Which in this instance, is 12.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="instructional-arrow">
+		Resize me! <span class="icon-right"></span>
+	</div>
+	
+	<div id="overlay" class="row">
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+		<div class="span1"></div>
+	</div>
+	<div id="overlay-switch" class="off">
+		<div class="switch-bar"></div>
+		<div class="switch-bar"></div>
+		<div class="switch-bar"></div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
 </html>

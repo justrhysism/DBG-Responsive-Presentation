@@ -3,47 +3,47 @@
    ========================================================================== */
 
 html, button, input, select, textarea {
-  color: #222;
+	color: #222;
 }
 
 body {
-  font-size: 1em;
-  line-height: 1.4;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 ::-moz-selection, ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 img {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 textarea {
-  resize: vertical;
+	resize: vertical;
 }
 
 .chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
 
 /* ==========================================================================
@@ -65,13 +65,26 @@ header {
 	box-shadow: inset 0px 0px 0px 10px $orange, inset 0px 10px 0px 10px lighten($orange, 10%);
 }
 
+.first-row [class*="span"] {
+	background: darkred;
+}
+
+.second-row [class*="span"] {
+	background: silver;
+}
+
+.third-row [class*="span"] {
+	background: DarkSlateBlue;
+}
+
 #instructional-arrow {
 	position: fixed;
 	right: 0;
 	bottom: 0;
-	padding: 0.2em;
+	padding: 0.2em 0em 0.2em 0.6em;
 	font-weight: bold;
 	background: rgba(255,255,255,0.75);
+	z-index: 9900;
 
 	.icon-right {
 		display: inline-block;
@@ -80,6 +93,120 @@ header {
 		transform: rotate(45deg);
 		color: black;
 	}
+}
+
+// Grid Generation
+$gridColumns: 12;
+$fluidGridGutterWidth: 2%;
+$fluidGridPadding: 2%;
+
+.row {
+	margin-bottom: $fluidGridGutterWidth;
+
+	&:before, &:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+[class*="span"] {
+	width: 100%;
+	margin-left: $fluidGridGutterWidth;
+	float: left;
+
+	&.pad {
+		padding: 0 $fluidGridPadding;
+	}
+
+	&.box {
+		background: $orange;
+	}
+}
+.row > [class*="span"]:first-child {
+	margin-left: 0;
+}
+
+@mixin grid-fluid-span-x($gridColumns, $fluidGridGutterWidth) {
+	$fluidGridColumnWidth: (100% + $fluidGridGutterWidth) / $gridColumns;
+	@while $gridColumns > 0 {
+		.span#{$gridColumns} { @include grid-fluid-span($gridColumns, $fluidGridColumnWidth, $fluidGridGutterWidth); }
+		.span#{$gridColumns}.pad { @include grid-fluid-span-pad($gridColumns, ($fluidGridColumnWidth), $fluidGridGutterWidth); }
+		$gridColumns: $gridColumns - 1;
+	}
+}
+
+@mixin grid-fluid-span($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
+	width: ($fluidGridColumnWidth * $columns) - $fluidGridGutterWidth;
+}
+
+@mixin grid-fluid-span-pad($columns, $fluidGridColumnWidth, $fluidGridGutterWidth) {
+	width: ($fluidGridColumnWidth * $columns) - $fluidGridGutterWidth - ($fluidGridPadding * 2);
+}
+
+@include grid-fluid-span-x($gridColumns, $fluidGridGutterWidth);
+
+// Grid Overlay
+#overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 0;
+	z-index: 9000;
+	
+	[class*="span"] {
+		position: relative;
+		min-height: 100%;
+		background: rgba(11, 77, 161, 0.08);
+		display: none;
+
+		&:after {
+			content: ' ';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border: 1px dotted rgba(11, 77, 161, 0.8);
+			border-bottom: none;
+			border-top: none;
+		}
+	}
+}
+
+#overlay-switch {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9500;
+	cursor: pointer;
+	width: 24px;
+	padding: 18px 18px 14px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	-webkit-transition: all 0.145s ease-out;
+	-moz-transition: all 0.145s ease-out;
+	-ms-transition: all 0.145s ease-out;
+	transition: all 0.145s ease-out;
+
+	&.off {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+}
+.switch-bar {
+	background: black;
+	height: 4px;
+	margin-bottom: 4px;
 }
 
 /* ==========================================================================
@@ -193,22 +320,22 @@ header {
 	display: table-header-group;
 	/* h5bp.com/t */
   }
-  tr {
+tr {
 	page-break-inside: avoid;
   }
-  img {
+img {
 	page-break-inside: avoid;
 	max-width: 100% !important;
   }
-  @page {
+@page {
 	margin: 0.5cm;
   }
 
-  p, h2, h3 {
+p, h2, h3 {
 	orphans: 3;
 	widows: 3;
   }
-  h2, h3 {
+h2, h3 {
 	page-break-after: avoid;
   }
 }

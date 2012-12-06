@@ -157,7 +157,7 @@
 		</article>
 		
 		<!-- Eagles Site Statistics -->
-		<article>
+		<article class="smaller">
 			<h3>Micro Case Study: Eagles</h3>
 			<h4>Screen Resolutions Accessing Eagles.org.au Website</h4>
 			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/static/modules/gviz/1.0/chart.js"> {"dataSourceUrl":"//docs.google.com/spreadsheet/tq?key=0AsL29eq97wJddGZnT0kxWEhoV0F0b0Qwc0pQVEFZZEE&transpose=0&headers=1&range=A1%3AB41&gid=0&pub=1","options":{"vAxes":[{"title":"Left vertical axis title","useFormatFromData":true,"minValue":null,"viewWindowMode":"pretty","viewWindow":{"min":null,"max":null},"maxValue":null},{"useFormatFromData":true,"minValue":null,"viewWindowMode":"pretty","viewWindow":{"min":null,"max":null},"maxValue":null}],"titleTextStyle":{"bold":true,"color":"#000","fontSize":16},"pieHole":0,"booleanRole":"certainty","animation":{"duration":500},"backgroundColor":{"fillOpacity":"0"},"legend":"right","colors":["#3366CC","#DC3912","#FF9900","#109618","#990099","#0099C6","#DD4477","#66AA00","#B82E2E","#316395","#994499","#22AA99","#AAAA11","#6633CC","#E67300","#8B0707","#651067","#329262","#5574A6","#3B3EAC","#B77322","#16D620","#B91383","#F4359E","#9C5935","#A9C413","#2A778D","#668D1C","#BEA413","#0C5922","#743411"],"theme":"maximized","is3D":true,"hAxis":{"title":"Horizontal axis title","useFormatFromData":true,"minValue":null,"viewWindowMode":"pretty","viewWindow":{"min":null,"max":null},"maxValue":null},"tooltip":{}},"state":{},"view":{},"chartType":"PieChart","chartName":"Chart1"} </script>
@@ -230,6 +230,139 @@
 			<div class="resizable-container">
 				<div class="resizable">
 					<iframe src="demos/fluid.html"></iframe>
+				</div>
+			</div>
+		</article>
+		
+		<!-- Fluid is great, but... -->
+		<article>
+			<h3>Fluid design is great, but...</h3>
+			<ul>
+				<li>Very wide screens it looks silly</li>
+				<li>Very skinny screen (e.g. mobile screens) it's unreadable</li>
+			</ul>
+			<p>
+				What's the solution for a fluid website which is device agnostic?
+			</p>
+		</article>
+		
+		<!-- Responsive -->
+		<article>
+			<h2>Responsive Design</h2>
+		</article>
+		
+		<!-- Responsive Design -->
+		<article>
+			<h3>Responsive Design</h3>
+			<ul>
+				<li>Just a concept</li>
+				<li>No hard and fast <i>rules</i>*</li>
+				<li>No right or wrong way</li>
+				<li>
+					An accepted standard is starting to form
+					<ul>
+						<li>for better or for worse...</li>
+					</ul>
+				</li>
+				<li>
+					There's many people who <i>think</i> they totally grasp
+					the responsive concept
+					<ul>
+						<li>They usually don't; so be careful when researching online</li>
+					</ul>
+				</li>
+			</ul>
+			<p><small>* we will get back to rules</small></p>
+		</article>
+
+		<!-- Media Queries -->
+		<article>
+			<h3>Media Queries</h3>
+			<p>
+				Responsive design is a concept, yes. But it uses some rather old CSS
+				and some very basic fundamentals to work: <i>CSS Media Queries</i>.
+			</p>
+			<p>
+				CSS Media Queries are just simple override instructions when
+				the viewport meets certain requirements.
+			</p>
+			<pre class="language-css">
+body {
+    font-size: 1em;
+}
+
+/* When the viewport is &lt;979px... */
+@media (max-width: 979px) {
+    body {
+        /* Reduce font size */
+        font-size: 0.75em;
+    }
+}
+</pre>
+		</article>
+		
+		<!-- Media Queries (Simplified) -->
+		<article>
+			<h3>Media Queries <small>Simplified</small></h3>
+			<p>
+				We simply tell the browser what to do when the screen gets smaller
+				(or bigger).
+			</p>
+			<pre class="language-css">
+body {
+    /* Normally, do <i>this</i> */
+}
+
+/* Although, if we match this rule... */
+@media (<i>rule-to-match</i>) {
+   body {
+        /* Do <i>this</i> */
+   }
+}
+</pre>
+			<p>
+				Can have as many Media Queries as is necessary. This particular presentation 
+				has 14 seperate Media Queries for different widths and heights.
+			</p>
+		</article>
+		
+		<!-- Responsive Methods -->
+		<article>
+			<h2>Responsive Methods</h2>
+		</article>
+
+		<!-- Responsive Methods -->
+		<article>
+			<h3>Responsive Methods</h3>
+			<p>
+				There are various methods we can use to make a website responsive:
+			</p>
+			<ul>
+				<li>Folding</li>
+				<li>Removing</li>
+				<li>Hiding</li>
+				<li>Minor adjustments</li>
+			</ul>
+		</article>
+		
+		<!-- Folding -->
+		<article>
+			<h3>Folding</h3>
+			<p>Folding is a method of folding blocks of content together.</p>
+			<p>This is the most common method for creating a responsive layout.</p>
+			<div class="diagram" style="height: 65%;">
+				<div class="outer-border">
+					<div class="row">
+						<div class="block grey"></div>
+					</div>
+					<div class="row">
+						<div class="block span-half red"></div>
+						<div class="block span-half red"></div>
+					</div>
+					<div class="row">
+						<div class="block span-half outline-red"></div>
+						<div class="block span-half icon-forward"></div>
+					</div>
 				</div>
 			</div>
 		</article>

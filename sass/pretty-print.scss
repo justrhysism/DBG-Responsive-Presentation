@@ -1,0 +1,26 @@
+﻿// Pretty print
+.prettyprint {
+	.str, .atv {
+	// a markup attribute value
+		color: rgb(0, 138, 53);
+	}
+	.kwd, .tag {
+	// a markup tag name
+		color: rgb(0, 102, 204);
+	}
+	.com {
+	// a comment
+		color: rgb(0, 138, 53);
+	}
+	.lit {
+	// a literal value
+		color: rgb(127, 0, 0);
+	}
+	.pun, .opn, .clo {
+		color: rgb(127, 127, 127);
+	}
+	.typ, .atn, .dec, .var {
+	// a declaration; a variable name
+		color: rgb(127, 0, 127);
+	}
+}

@@ -14,6 +14,7 @@
 
 // Imports
 @import "compass/css3";
+@import 'fontello.scss';
 
 // Variables
 $slideWidth: 80%;
@@ -232,7 +233,6 @@ h1, h2, h3 {
 	line-height: 1em;
 
 	small {
-		font-size: 0.65em;
 		color: $fontColour;
 		font-weight: 300;
 	}
@@ -437,6 +437,10 @@ div.author {
 	}
 }
 
+small {
+	font-size: 0.65em;
+}
+
 // Size variants
 article.smaller {
 	p, ul, table, p {
@@ -464,40 +468,12 @@ article.smaller {
 	opacity: 0;
 }
 
-// Pretty print
-.prettyprint {
-	.str, .atv {
-	// a markup attribute value
-		color: rgb(0, 138, 53);
-	}
-	.kwd, .tag {
-	// a markup tag name
-		color: rgb(0, 102, 204);
-	}
-	.com {
-	// a comment
-		color: rgb(127, 127, 127);
-		font-style: italic;
-	}
-	.lit {
-	// a literal value
-		color: rgb(127, 0, 0);
-	}
-	.pun, .opn, .clo {
-		color: rgb(127, 127, 127);
-	}
-	.typ, .atn, .dec, .var {
-	// a declaration; a variable name
-		color: rgb(127, 0, 127);
-	}
-}
-
 // Resizable
 .resizable {
 	padding: 1%;
 	border: 1px solid silver;
 	@include border-radius(6px);
-	background: white;
+	background: #efefef;
 	max-height: 97%;
 	max-width: 98%;
 	position: relative;
@@ -515,6 +491,9 @@ article.smaller {
 	height: 100%;
 	width: 100%;
 }
+h3 + .resizable-container {
+	height: 88%;
+}
 
 // Utilities
 .shadow {
@@ -524,7 +503,14 @@ article.smaller {
 	@include box-shadow(0px 10px 15px rgba(0,0,0,0.75));
 }
 
+// Pretty Print
+@import 'pretty-print';
+
+// Slide Templates
 @import 'slide-templates.scss';
+
+// Diagramming
+@import 'diagram.scss';
 
 // Responsive-goodness
 @media (max-height: 799px) {
@@ -565,7 +551,6 @@ article.smaller {
 		font-size: 0.438em;
 	}
 }
-
 @media (max-width: 439px) {
 	body {
 		font-size: 0.438em;
