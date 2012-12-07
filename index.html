@@ -335,11 +335,11 @@ body {
 		<article>
 			<h3>Responsive Methods</h3>
 			<p>
-				There are various methods we can use to make a website responsive:
+				There are various methods we can utilise to make a website responsive:
 			</p>
 			<ul>
 				<li>Folding</li>
-				<li>Removing</li>
+				<li>&ldquo;Removing&rdquo;</li>
 				<li>Hiding</li>
 				<li>Minor adjustments</li>
 			</ul>
@@ -347,24 +347,116 @@ body {
 		
 		<!-- Folding -->
 		<article>
-			<h3>Folding</h3>
+			<h3>Folding Method</h3>
 			<p>Folding is a method of folding blocks of content together.</p>
 			<p>This is the most common method for creating a responsive layout.</p>
-			<div class="diagram" style="height: 65%;">
-				<div class="outer-border">
-					<div class="row">
-						<div class="block grey"></div>
-					</div>
-					<div class="row">
-						<div class="block span-half red"></div>
-						<div class="block span-half red"></div>
-					</div>
-					<div class="row">
-						<div class="block span-half outline-red"></div>
-						<div class="block span-half icon-forward"></div>
-					</div>
+			
+			<div class="resizable-container" style="height: 68%;">
+				<div class="resizable nobackground">
+					<iframe src="demos/folding.html"></iframe>
 				</div>
 			</div>
+		</article>
+		
+		<!-- Folding Use Cases -->
+		<article>
+			<h3>Folding Use Cases</h3>
+			<ul>
+				<li>Text blocks</li>
+				<li>LHS navigation</li>
+				<li>Images</li>
+				<li>Form fields (field drops under label)</li>
+				<li><a href="http://test-finelinec3.dbgtechnologies.com" target="_blank">Banner text</a></li>
+			</ul>
+			<p>
+				Very easy to implement when structured with a grid system.
+			</p>
+		</article>
+		
+		<!-- Folding Advanced -->
+		<article>
+			<h3>Folding Advanced</h3>
+			<p>Blocks can fold at different intervals.</p>
+			<div class="resizable-container" style="height: 82%">
+				<div class="resizable nobackground">
+					<iframe src="demos/folding-advanced.html"></iframe>
+				</div>
+			</div>
+		</article>
+
+		<!-- "Removing" -->
+		<article>
+			<h3>&ldquo;Removing&rdquo; Method</h3>
+			<p>This method simply &ldquo;removes&rdquo; the content from the screen.</p>
+			<div class="resizable-container" style="height: 82%">
+				<div class="resizable nobackground">
+					<iframe src="demos/removing.html"></iframe>
+				</div>
+			</div>
+			<div class="author">* Content isn't removed</div>
+		</article>
+		
+		<!-- "Removing" Issues -->
+		<article>
+			<h3>&ldquo;Removing&rdquo; Issues</h3>
+			<p>There are several issues with the removing method:</p>
+			<ul>
+				<li>
+					Content is still in the DOM, therefore is still being downloaded
+					<ul>
+						<li>
+							If the element contains images, the device is still going
+							to download the images, even though it's not going to 
+							display them.
+						</li>
+					</ul>
+				</li>
+				<li>
+					If the content isn't worth displaying for the &ldquo;mobile&rdquo; site, is it worth
+					display at all?
+				</li>
+			</ul>
+			<pre>
+&lt;div style="display: none;"&gt;
+    &lt;!-- Contents are still downloaded --&gt;
+    &lt;img src="/images/banner-sale.jpg" alt="50% Sale" /&gt;
+    &lt;img src="/images/banner-xmas.jpg" alt="Merry Xmas" /&gt;
+&lt;/div&gt;
+</pre>
+		</article>
+		
+		<!-- "Removing" Use Cases -->
+		<article>
+			<h3>&ldquo;Removing&rdquo; Use Cases</h3>
+			<p>There are however, times when removing elements from the screen can be appropriate.</p>
+			<p>
+				The <a href="http://www.c3cms.com.au" target="_blank">C3 CMS</a> site removes the
+				"try the free demo" button from the header. This button is accessible through the
+				menu.
+			</p>
+			<p>
+				While purists may suggest that it's an 8.5KB waste of bandwidth (by not displaying
+				the image), I decided more was to be gained from removing the button than leaving
+				it there.
+			</p>
+		</article>
+		
+		<!-- Hiding -->
+		<article>
+			<h3>Hiding Method</h3>
+			<p>
+				The hiding method is not the same as the &ldquo;removing&rdquo; method as the
+				elements are still accessible by the user.
+			</p>
+			<p>
+				This is a popular method for navigation menus, where attemping to display a large
+				list of menu items takes up too much space, and &ldquo;removing&rdquo; it provides
+				a terrible user experience.
+			</p>
+			<p>
+				Usually, the content is hidden and becomes accessible when the user touches a button
+				to display the content.
+			</p>
 		</article>
 	</section>
 	

@@ -2,6 +2,6 @@
 $(document).ready(function () {
 	// Resizable
 	$('.resizable').resizable({
-		containment: '.resizable-container'
+		containment: 'parent'
 	});
 });

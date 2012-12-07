@@ -137,3 +137,88 @@
 2012-12-06 18:10:38     error sass/diagram.scss (Line 81: Undefined mixin 'transform'.)
 2012-12-06 18:10:38 overwrite stylesheets/diagram.css 
 2012-12-06 18:10:38 overwrite stylesheets/styles.css 
+2012-12-06 18:14:30 overwrite stylesheets/styles.css 
+2012-12-06 18:14:42 overwrite stylesheets/fontello.css 
+2012-12-06 18:14:43 overwrite stylesheets/styles.css 
+2012-12-07 09:52:19     error sass/styles.scss (Line 517: File to import not found or unreadable: diagram.scss.
+Load paths:
+  D:/GitHub/DBG-Responsive-Presentation/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/susy-1.0.4/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss
+  Compass::SpriteImporter)
+2012-12-07 09:52:19 overwrite stylesheets/styles.css 
+2012-12-07 09:52:23     error sass/styles.scss (Line 517: File to import not found or unreadable: diagram.scss.
+Load paths:
+  D:/GitHub/DBG-Responsive-Presentation/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/susy-1.0.4/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss
+  Compass::SpriteImporter)
+2012-12-07 09:52:23 overwrite stylesheets/styles.css 
+2012-12-07 09:52:47     error sass/styles.scss (Line 517: File to import not found or unreadable: demos/sass/diagram.scss.
+Load paths:
+  D:/GitHub/DBG-Responsive-Presentation/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/susy-1.0.4/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss
+  Compass::SpriteImporter)
+2012-12-07 09:52:47 overwrite stylesheets/styles.css 
+2012-12-07 09:53:17     error sass/styles.scss (Line 517: File to import not found or unreadable: demos/sass/diagram.
+Load paths:
+  D:/GitHub/DBG-Responsive-Presentation/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/susy-1.0.4/sass
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  C:/Program Files (x86)/Compass/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss
+  Compass::SpriteImporter)
+2012-12-07 09:53:17 overwrite stylesheets/styles.css 
+2012-12-07 09:53:22 overwrite stylesheets/styles.css 
+2012-12-07 09:53:53 overwrite stylesheets/styles.css 
+2012-12-07 10:00:14    create stylesheets/responsive.css 
+2012-12-07 10:00:43 overwrite stylesheets/styles.css 
+2012-12-07 10:16:03 overwrite stylesheets/styles.css 
+2012-12-07 10:16:09 overwrite stylesheets/styles.css 
+2012-12-07 15:50:01 overwrite stylesheets/pretty-print.css 
+2012-12-07 15:50:02 overwrite stylesheets/styles.css 
+2012-12-07 15:50:11 identical stylesheets/pretty-print.css 
+2012-12-07 15:50:11 identical stylesheets/styles.css 
+2012-12-07 15:50:42 overwrite stylesheets/pretty-print.css 
+2012-12-07 15:50:43 overwrite stylesheets/styles.css 
+2012-12-07 15:51:36 overwrite stylesheets/pretty-print.css 
+2012-12-07 15:51:37 overwrite stylesheets/styles.css 
+2012-12-07 15:52:29 overwrite stylesheets/pretty-print.css 
+2012-12-07 15:52:29 overwrite stylesheets/styles.css 
+2012-12-07 16:24:27 overwrite stylesheets/slide-templates.css 
+2012-12-07 16:24:28 overwrite stylesheets/styles.css 
+2012-12-07 16:25:37 overwrite stylesheets/slide-templates.css 
+2012-12-07 16:25:37 overwrite stylesheets/styles.css 
+2012-12-07 16:25:55 overwrite stylesheets/slide-templates.css 
+2012-12-07 16:25:55 overwrite stylesheets/styles.css 

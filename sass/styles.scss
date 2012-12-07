@@ -478,6 +478,10 @@ article.smaller {
 	max-width: 98%;
 	position: relative;
 
+	&.nobackground {
+		background: white;
+	}
+
 	iframe {
 		position: relative;
 		border: none;
@@ -494,6 +498,9 @@ article.smaller {
 h3 + .resizable-container {
 	height: 88%;
 }
+p + .resizable-container {
+	margin-top: 0.667em;
+}
 
 // Utilities
 .shadow {
@@ -504,88 +511,12 @@ h3 + .resizable-container {
 }
 
 // Pretty Print
-@import 'pretty-print';
+@import "pretty-print";
 
 // Slide Templates
-@import 'slide-templates.scss';
+@import "slide-templates";
 
 // Diagramming
-@import 'diagram.scss';
+@import "../demos/sass/diagram";
 
-// Responsive-goodness
-@media (max-height: 799px) {
-	body {
-		font-size: 0.75em;
-	}
-}
-@media (max-width: 979px) {
-	body {
-		font-size: 0.75em;
-	}
-}
-
-@media (max-height: 649px) {
-	body {
-		font-size: 0.625em;
-	}
-}
-@media (max-width: 769px) {
-	body {
-		font-size: 0.625em;
-	}
-}
-
-@media (max-height: 549px) {
-	body {
-		font-size: 0.5em;
-	}
-}
-@media (max-width: 579px) {
-	body {
-		font-size: 0.5em;
-	}
-}
-
-@media (max-height: 449px) {
-	body {
-		font-size: 0.438em;
-	}
-}
-@media (max-width: 439px) {
-	body {
-		font-size: 0.438em;
-	}
-}
-
-@media (max-height: 349px) {
-	body {
-		font-size: 0.375em;
-	}
-}
-@media (max-width: 359px) {
-	body {
-		font-size: 0.375em;
-	}
-}
-
-@media (max-height: 299px) {
-	body {
-		font-size: 0.313em;
-	}
-}
-@media (max-width: 289px) {
-	body {
-		font-size: 0.313em;
-	}
-}
-
-@media (max-height: 249px) {
-	body {
-		font-size: 0.250em;
-	}
-}
-@media (max-width: 249px) {
-	body {
-		font-size: 0.250em;
-	}
-}
+@import "responsive";
