@@ -510,6 +510,13 @@ p + .resizable-container {
 	@include box-shadow(0px 10px 15px rgba(0,0,0,0.75));
 }
 
+.icon-diagram {
+	font-size: 4em;
+	margin: 0.5em 0;
+	text-align: center;
+	line-height: 1em;
+}
+
 // Pretty Print
 @import "pretty-print";
 
